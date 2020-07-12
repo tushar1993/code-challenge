@@ -1,5 +1,20 @@
+<%= stylesheet_link_tag "companies" %>
+
 <div class="py-5">
   <%= form_for @company do |f| %>
+
+		<% if @error.present? %>
+			<div class="row my-lg-3">
+				<div class="col-lg-12">
+					<div class="show-error">
+						<h5>
+							<img class="mr-1" src="/assets/wrong-number.svg" alt="">
+							<%= @error %>
+						</h5>
+					</div>
+				</div>
+			</div>
+		<% end %>
 
     <div class="row my-lg-3">
       <div class="col-lg-3">

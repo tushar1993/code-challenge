@@ -13,4 +13,23 @@
  *= require_tree .
  *= require_self
  */
-
+.show-error {
+	max-width: 870px;
+	margin: 50px auto;
+	background: rgba(238, 81, 81, 0.143625);
+	border: 1px solid #EE5151;
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 20px 20px;
+}
+.show-error h5 {
+	margin: 0;
+	margin-right: 10px;
+	color: #EE5151!important;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+}
+.mr-1 {
+	margin-right: 10px;
+}
